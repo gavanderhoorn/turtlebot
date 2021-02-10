@@ -24,10 +24,10 @@ target_link_libraries(turtlebot_teleop_joy ${catkin_LIBRARIES})
 #############
 
 ## Mark executable scripts (Python etc.) for installation
-install(PROGRAMS
-  scripts/turtlebot_teleop_key
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+
+catkin_install_python(PROGRAMS scripts/turtlebot_teleop_key
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  
 
 ## Mark executables and/or libraries for installation
 install(TARGETS turtlebot_teleop_joy
